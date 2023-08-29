@@ -1,0 +1,49 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/fonts';
+@import 'libs/_animate.min';
+
+
+@import 'base/variables';
+@import 'base/mixins';
+
+
+// .container-main {
+//     max-width: 1140px;
+//     margin: 0 auto;
+//     position: relative;
+//     padding: 0 10px;
+// }
+
+.hidden {
+    display: none;
+}
+
+// ul {
+//     &.cube {
+//         list-style-type: none;
+//         li {
+//             margin-left: 10px;
+//             position: relative;
+//             margin-bottom: 10px;
+//             &:before {
+//                 content: '';
+//                 background-image: url(../icons/list_item.svg);
+//                 width: 40px;
+//                 height: 40px;
+//                 position: absolute;
+//                 left: -40px;
+//                 top: -4px;
+//             }
+//         }
+//     }
+// }
+
+
+@import 'blocks/pageParts';
+
+
+
+// @import 'base/animations';

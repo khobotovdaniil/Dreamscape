@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Philosopher';
+    src: local('Philosopher'),
+        url('../fonts/Philosopher.woff2') format('woff2'),
+        url('../fonts/Philosopher.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: local('Philosopher_Italic'),
+        url('../fonts/Philosopher_Italic.woff2') format('woff2'),
+        url('../fonts/Philosopher_Italic.woff2') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: local('Philosopher_Bold'),
+        url('../fonts/Philosopher_Bold.woff2') format('woff2'),
+        url('../fonts/Philosopher_Bold.woff2') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

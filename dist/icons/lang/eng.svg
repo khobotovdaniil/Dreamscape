@@ -1,1 +1,21 @@
-<svg width="50" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="30"><path d="M50 0H0v30h50V0z" fill="#fff"/></mask><g mask="url(#a)"><path d="M50 0H0v30h50V0z" fill="#fff"/><path d="M33.477 10.848L50 1.333V0h-1.132L30.02 10.848h3.456zm-.774 8.902L50 29.709v-1.992L36.16 19.75h-3.457zM0 2.283l14.794 8.565h3.472L0 .29v1.992zM17.476 19.75L0 29.816V30h3.159l17.774-10.25h-3.457z" fill="#BD0034"/><path d="M46.588 0h-17.52v10.082L46.587 0zM21.35 0H3.903L21.35 10.082V0zM50 10.848v-6.88l-11.874 6.88H50zm0 15.705V19.75H38.126L50 26.553zM4.902 30H21.35v-9.484L4.902 30zm24.165 0h16.508l-16.508-9.484V30zM0 19.75v7.124l12.291-7.124H0zm0-8.902h12.291L0 3.723v7.125z" fill="#1A237B"/><path d="M22.884 0v12.625H0v5.347h22.884V30h4.649V17.972H50v-5.347H27.533V0h-4.649z" fill="#BD0034"/></g></svg>
+<svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_29_2143" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="30">
+<path d="M50 0H0V30H50V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_29_2143)">
+<path d="M50 0H0V30H50V0Z" fill="white"/>
+<path d="M33.4775 10.8478L50.0001 1.33299V0H48.8678L30.021 10.8478H33.4775Z" fill="#BD0034"/>
+<path d="M32.7026 19.7498L50 29.7089V27.7171L36.1591 19.7498H32.7026Z" fill="#BD0034"/>
+<path d="M0 2.28284L14.7944 10.8477H18.2658L0 0.291016V2.28284Z" fill="#BD0034"/>
+<path d="M17.4762 19.7498L0 29.8161V30H3.15852L20.9327 19.7498H17.4762Z" fill="#BD0034"/>
+<path d="M46.5882 0H29.0674V10.0817L46.5882 0Z" fill="#1A237B"/>
+<path d="M21.3497 0H3.90332L21.3497 10.0817V0Z" fill="#1A237B"/>
+<path d="M50.0002 10.8477V3.96826L38.126 10.8477H50.0002Z" fill="#1A237B"/>
+<path d="M50.0002 26.5526V19.7498H38.126L50.0002 26.5526Z" fill="#1A237B"/>
+<path d="M4.90186 30H21.35V20.5159L4.90186 30Z" fill="#1A237B"/>
+<path d="M29.0674 30H45.5751L29.0674 20.5159V30Z" fill="#1A237B"/>
+<path d="M0 19.7498V26.8744L12.2914 19.7498H0Z" fill="#1A237B"/>
+<path d="M0 10.8478H12.2914L0 3.72314V10.8478Z" fill="#1A237B"/>
+<path d="M22.8844 0V12.6251H0V17.9724H22.8844V30H27.5328V17.9724H50V12.6251H27.5328V0H22.8844Z" fill="#BD0034"/>
+</g>
+</svg>

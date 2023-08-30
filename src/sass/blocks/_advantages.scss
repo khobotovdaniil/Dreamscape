@@ -1,0 +1,23 @@
+.advantages {
+    height: 330px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url('../img/bg/advantages.jpg') center (center/cover) no-repeat;
+    &__wrapper {
+        border-radius: 10px;
+        border: 4px solid var(--main-5);
+        box-shadow: var(--shadow-button-light);
+        height: 210px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__descr {
+        text-align: center;
+    }
+
+}

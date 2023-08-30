@@ -7,7 +7,6 @@
 
 
 @import 'base/variables';
-// @import 'base/mixins';
 @import 'base/text';
 @import 'base/headers';
 @import 'base/buttons';
@@ -15,6 +14,7 @@
 
 
 .test {
+    display: none;
     background-color: #ababae;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -53,7 +53,17 @@
 
 
 // @import 'blocks/pageParts';
-
-
+@import 'blocks/header';
+@import 'media/media_header';
+@import 'blocks/promo';
+@import 'media/media_promo';
+@import 'blocks/about';
+@import 'media/media_about';
+@import 'blocks/advantages';
+@import 'media/media_advantages';
+@import 'blocks/services';
+@import 'media/media_services';
+@import 'blocks/partners';
+@import 'media/media_partners';
 
 // @import 'base/animations';

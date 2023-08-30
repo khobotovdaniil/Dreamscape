@@ -20,6 +20,7 @@
         color: var(--main-4);
         background-image: var(--gradient-dark);
         border: none;
+        transition: 0.6s all;
         &:hover {
             color: var(--main-5);
             box-shadow: var(--shadow-button-dark);
@@ -32,9 +33,11 @@
         color: var(--main-2);
         background-image: var(--gradient-bg);
         border: none;
+        transition: 0.6s all;
+        text-transform: none;
         &:hover {
             color: var(--main-1);
-            box-shadow: var(--shadow-button-dark);
+            box-shadow: var(--shadow-button-light);
         }
     }
 }

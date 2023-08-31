@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			} else {
 				headerBlock.style.backgroundColor = 'rgba(0,0,0,0)';
 			}
-		};backgroundColor
+		};
 
     //WoW.js
 	const wow = new WOW({

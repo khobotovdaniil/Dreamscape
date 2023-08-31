@@ -4541,7 +4541,6 @@ window.addEventListener('DOMContentLoaded', () => {
       headerBlock.style.backgroundColor = 'rgba(0,0,0,0)';
     }
   };
-  backgroundColor;
 
   //WoW.js
   const wow = new wow_js__WEBPACK_IMPORTED_MODULE_0___default.a({

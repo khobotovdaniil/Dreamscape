@@ -1,6 +1,7 @@
 .partners {
-    height: 440px;
+    min-height: 400px;
     padding-top: 60px;
+    padding-bottom: 60px;
     background-image: var(--gradient-dark);
     &__title {
         display: flex;
@@ -8,14 +9,18 @@
     }
     &__descr {
         margin-top: 30px;
+        text-align: center;
     }
-}
-
-.glide {
     &__slide {
-        img {
-            width: 100%;
-            object-fit: cover;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 3px solid var(--main-4);
+        &:hover {
+            box-shadow: var(--shadow-button-light);
+            background: var(--gradient-light);
         }
     }
 }

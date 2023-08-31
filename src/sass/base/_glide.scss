@@ -1,0 +1,31 @@
+.glide {
+    &__slide {
+        margin-top: 15px;
+        padding: 15px 15px;
+        img {
+            width: 95%;
+            height: 95%;
+            object-fit: contain;
+        }
+    }
+    &__bullets {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    &__bullet {
+        height: 20px;
+        width: 20px;
+        margin: 20px 5px;
+        border-radius: 100%;
+        background-color: var(--main-3);
+        border: 1px solid var(--main-5);
+        box-shadow: var(--shadow-inset);
+        &--active {
+            background-image: var(--gradient-light);
+            box-shadow: var(--shadow-icons-dark);
+        }
+    }
+}

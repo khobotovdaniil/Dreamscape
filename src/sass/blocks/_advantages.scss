@@ -1,9 +1,14 @@
 .advantages {
-    height: 330px;
+    min-height: 330px;
     padding-top: 60px;
     padding-bottom: 60px;
     background: url('../img/bg/advantages.jpg') center (center/cover) no-repeat;
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
     &__wrapper {
+        margin-top: 30px;
         border-radius: 10px;
         border: 4px solid var(--main-5);
         box-shadow: var(--shadow-button-light);

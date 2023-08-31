@@ -11,6 +11,7 @@
 @import 'base/headers';
 @import 'base/buttons';
 @import 'base/forms';
+@import 'base/glide';
 
 
 .test {
@@ -65,5 +66,9 @@
 @import 'media/media_services';
 @import 'blocks/partners';
 @import 'media/media_partners';
+@import 'blocks/contacts';
+@import 'media/media_contacts';
+@import 'blocks/footer';
+@import 'media/media_footer';
 
 // @import 'base/animations';

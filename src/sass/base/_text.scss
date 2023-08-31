@@ -32,6 +32,10 @@
         }
         &.text-white {
             color: var(--text-white);
+            &:hover {
+                text-shadow: var(--shadow-text-light);
+                text-decoration: none;
+            }
         }
         &.text-yellow {
             color: var(--main-5);

@@ -1,0 +1,19 @@
+.footer {
+    min-height: 100px;
+    padding-top: 40px;
+    background-image: var(--gradient-dark);
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: flex;
+        list-style-type: none;
+        &__item {
+            margin-left: 20px;
+            &:hover {
+                
+            }
+        }
+    }
+}

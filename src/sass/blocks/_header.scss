@@ -35,9 +35,6 @@
             object-fit: contain;
         }
     }
-    &__text {
-        margin-left: 5px;
-    }
     &__socials {
         display: flex;
         justify-content: space-around;
@@ -54,9 +51,13 @@
     &__contacts {
         display: flex;
         justify-content: space-around;
+        margin-right: 10px;
         &__item {
             display: flex;
             margin: 0 10px;
+            &__descr {
+                margin-left: 5px;
+            }
         }
         a {
             &:hover {
@@ -64,8 +65,12 @@
                     &__icon {
                         filter: drop-shadow(var(--shadow-icons-light));    
                     }
-                    &__text {
-                        text-shadow: var(--shadow-text-light);
+                    &__contacts {
+                        &__item {
+                            &__descr {
+                                text-shadow: var(--shadow-text-light);
+                            }
+                        }
                     }
                 }
             }
@@ -75,8 +80,8 @@
         display: flex;
         justify-content: space-between;
         &__item {
-            width: 50px;
-            height: 30px;
+            width: 60px;
+            height: 36px;
             border-radius: 5px;
             transition: 0.6s all;
             filter: drop-shadow(var(--shadow-icons-dark)); 
@@ -85,6 +90,8 @@
             }
             img {
                 border-radius: 5px;
+                width: 100%;
+                object-fit: cover;
             }
             &_active {
                 filter: none; 
@@ -99,11 +106,12 @@
             justify-content: space-around;
             list-style-type: none;
             padding-left: 0;
+            margin-right: 10px;
         }
         &__item {
             font-family: 'Georgia', serif;
             font-weight: 700;
-            text-transform: uppercase;
+            text-transform: capitalize;
             font-size: 16px;
             &__link {
                 &:hover {

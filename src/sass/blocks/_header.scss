@@ -6,10 +6,8 @@
     transition: 1s all;
     z-index: 10;
     &__wrapper {
-        margin: 0 auto;
         display: grid;
-        grid-template-columns: 100px auto auto 150px;
-        column-gap: 30px;
+        grid-template-columns: 100px 150px auto 150px;
         row-gap: 10px;
     }
     &__logoblock {
@@ -30,6 +28,7 @@
     &__icon {
         transition: 0.6s all;
         height: 30px;
+        margin: 0 5px;
         filter: drop-shadow(var(--shadow-icons-dark));    
         img {
             height: 100%;
@@ -37,7 +36,7 @@
         }
     }
     &__text {
-        margin-left: 10px;
+        margin-left: 5px;
     }
     &__socials {
         display: flex;
@@ -57,6 +56,7 @@
         justify-content: space-around;
         &__item {
             display: flex;
+            margin: 0 10px;
         }
         a {
             &:hover {
@@ -98,6 +98,7 @@
             display: flex;
             justify-content: space-around;
             list-style-type: none;
+            padding-left: 0;
         }
         &__item {
             font-family: 'Georgia', serif;

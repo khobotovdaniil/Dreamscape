@@ -7,7 +7,7 @@
     z-index: 10;
     &__wrapper {
         display: grid;
-        grid-template-columns: 100px 150px auto 150px;
+        grid-template-columns: 150px 150px auto 150px;
         row-gap: 10px;
     }
     &__logoblock {
@@ -16,12 +16,13 @@
     &__logo {
         height: 90px;
         transition: 0.6s all;
+        filter: drop-shadow(var(--shadow-icons-white));   
         img {
             height: 100%;
             object-fit: contain;
         }
         &:hover {
-            filter: drop-shadow(var(--shadow-icons-light));   
+            filter: drop-shadow(var(--shadow-icons-light)); 
         }
 
     }
@@ -122,6 +123,34 @@
                 }
             }
 
+        }
+    }
+
+    .hamburger {
+        display: none;
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+        text-align: right;
+        // transform:rotateY(180deg);
+        &:hover {
+            span {
+                box-shadow: var(--shadow-button-light);
+            }
+        }
+        span {
+            display: block;
+            height: 6px;
+            width: 40px;
+            border-radius: 5px;
+            background-color: var(--main-4);
+            box-shadow: var(--shadow-button-dark);
+            transition: 0.6s all;
+            margin-left: 10px;
+            &.long {
+                margin: 6px 0;
+                width: 50px;
+            }
         }
     }
 }

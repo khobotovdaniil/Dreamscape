@@ -45,9 +45,10 @@
 
 @media (max-width:767px) {
     .button {
+        box-shadow: var(--shadow-button-dark);
         &:hover {
             color: var(--main-4);
-            box-shadow: none;
+            box-shadow: var(--shadow-button-dark);
             background-color: rgba(0,0,0,0);
         }
         &_small {
@@ -62,11 +63,12 @@
 
 @media (max-width:575px) {
     .button {
-        width: 160px;
-        height: 30px;
+        width: 180px;
+        height: 40px;
         font-size: 12px;
         &_small {
             width: 130px;
+            height: 30px;
             font-size: 10px;
             line-height: 30px;
         }

@@ -4,5 +4,13 @@
         &__descr {
             margin-top: 10px;
         }
+        &__slide {
+            box-shadow: var(--shadow-button-dark);
+            background: var(--gradient-light);
+            &:hover {
+                box-shadow: var(--shadow-button-dark);
+                background: var(--gradient-light);
+            }
+        }
     }
 }

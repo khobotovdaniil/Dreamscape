@@ -7,9 +7,13 @@
         border: 3px solid var(--main-5);
         box-shadow: var(--shadow-inset);
         padding: 0 20px;
+        margin-top: 20px;
         &:focus {
             outline: none;
             border-color: var(--main-3);
+        }
+        &:nth-child(even) {
+            margin-left: 35px;
         }
     }
     &__textarea {
@@ -21,9 +25,50 @@
         box-shadow: var(--shadow-inset);
         resize: none;
         padding: 20px 20px;
+        margin-top: 20px;
         &:focus {
             outline: none;
             border-color: var(--main-3);
+        }
+    }
+    &__triggers {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__policy {
+        margin: auto auto;
+        span {
+            margin-left: 5px;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+input[type='checkbox'] {
+    accent-color: var(--main-4);
+    &.policy {
+        position: relative;
+        &.notValid{
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 3px;
+                border: 2px solid var(--main-5);
+            }
+            &:after {
+                content: '*';
+                position: absolute;
+                top: -8px;
+                left:-10px;
+                width: 5px;
+                height: 5px;
+                color: var(--main-5);
+            }
         }
     }
 }
@@ -31,12 +76,27 @@
 @media (max-width:767px) {
     .form {
         &__input {
-            width: 360px;
+            width: 100%;
             height: 66px;
+            &:nth-child(even) {
+                margin-left: 0;
+            }
         }
         &__textarea {
-            width: 360px;
+            width: 100%;
             height: 114px;
+        }
+        &__triggers {
+            display: block;
+            margin-top: 0;
+            .button {
+                display: block;
+                margin: 20px 0 0 auto;
+            }
+        }
+        &__policy {
+            margin-left: 20px;
+            display: flex;
         }
     }
 }
@@ -44,11 +104,9 @@
 @media (max-width:575px) {
     .form {
         &__input {
-            width: 250px;
             height: 50px;
         }
         &__textarea {
-            width: 250px;
             height: 90px;
         }
     }

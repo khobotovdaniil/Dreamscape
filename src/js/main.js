@@ -1,6 +1,8 @@
 import WOW from 'wow.js';
-import glideSliders from './modules/glideSliders';
+
 import highlightMenuObjects from './modules/highlightMenuObjects';
+import glideSliders from './modules/glideSliders';
+import modals from './modules/modals';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -30,4 +32,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	} catch(e) {}
 
 	highlightMenuObjects('.menu__item__link', 'menu__item__link_active');
+
+	modals();
 });

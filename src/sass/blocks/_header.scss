@@ -87,7 +87,7 @@
             transition: 0.6s all;
             filter: drop-shadow(var(--shadow-icons-dark)); 
             &:hover {
-                filter: drop-shadow(var(--shadow-icons-light)); 
+                filter: none; 
             }
             img {
                 border-radius: 5px;
@@ -95,7 +95,7 @@
                 object-fit: cover;
             }
             &_active {
-                filter: none; 
+                filter: drop-shadow(var(--shadow-icons-light));         
             }
         }
     }

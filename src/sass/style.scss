@@ -20,13 +20,6 @@
     padding-bottom: 20px;
 }
 
-// .container-main {
-//     max-width: 1140px;
-//     margin: 0 auto;
-//     position: relative;
-//     padding: 0 10px;
-// }
-
 .hidden {
     display: none;
 }
@@ -69,5 +62,7 @@
 @import 'media/media_contacts';
 @import 'blocks/footer';
 @import 'media/media_footer';
+@import 'blocks/modals';
+@import 'media/media_modals';
 
 // @import 'base/animations';

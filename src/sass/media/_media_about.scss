@@ -1,5 +1,6 @@
 @media (max-width:1199px) {
     .about {
+        min-height: 550px;
         &__img {
             &_horisontal {
                 width: 350px;
@@ -47,6 +48,7 @@
 
 @media (max-width:767px) {
     .about {
+        min-height: 450px;
         padding: 30px 0;
         &__title {
             margin-left: 30px;

@@ -6,14 +6,16 @@
         display: flex;
         justify-content: space-between;
     }
+    &__copyright {
+        line-height: 20px;
+    }
     &__menu {
         display: flex;
         list-style-type: none;
+        padding-left: 0;
         &__item {
             margin-left: 20px;
-            &:hover {
-                
-            }
+            line-height: 20px;
         }
     }
 }

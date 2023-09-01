@@ -1,15 +1,15 @@
-// @media (max-width:1199px) {
-
-// }
-
-// @media (max-width:991px) {
-
-// }
-
-// @media (max-width:767px) {
-
-// }
-
-// @media (max-width:575px) {
-
-// }
+@media (max-width:991px) {
+    .footer {
+        padding: 20px 0;
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+        &__menu {
+            order: -1;
+            &__item {
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+}

@@ -1,11 +1,10 @@
 .services {
-    min-height: 450px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    min-height: 300px;
+    padding: 60px 0;
     background: url('../img/bg/services.jpg') center (center/cover) no-repeat;
     &__content {
         width: 50%;
-        transform: translateX(100%);
+        margin: 0 0 0 auto;
     }
     &__list {
         list-style-type: none;

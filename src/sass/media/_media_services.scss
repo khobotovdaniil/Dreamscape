@@ -6,10 +6,28 @@
 
 // }
 
-// @media (max-width:767px) {
+@media (max-width:767px) {
+    .services {
+        padding: 30px 0;
+        background: url('../img/bg/services-tab.jpg') center (center/cover) no-repeat;
+        &__content {
+            width: 70%;
+        }
+    }
+}
 
-// }
-
-// @media (max-width:575px) {
-
-// }
+@media (max-width:575px) {
+    .services {
+        background: url('../img/bg/services-mob.jpg') center (center/cover) no-repeat;
+        &__content {
+            width: 100%;
+        }
+        &__title {
+            display: flex;
+            justify-content: center;
+        }
+        &__button {
+            justify-content: center;
+        }
+    }
+}

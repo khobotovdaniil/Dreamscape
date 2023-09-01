@@ -1,8 +1,7 @@
 .about {
     min-height: 450px;
     background-image: var(--gradient-bg);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
     overflow: hidden; 
     &__title {
         display: flex;

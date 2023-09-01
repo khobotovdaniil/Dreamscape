@@ -1,15 +1,26 @@
-// @media (max-width:1199px) {
+@media (max-width:767px) {
+    .advantages {
+        padding: 30px 0;
+        &__wrapper {
+            height: auto;
+            align-items: start;
+            padding: 15px 0;
+        }
+        &__subtitle {
+            margin: 0;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+}
 
-// }
-
-// @media (max-width:991px) {
-
-// }
-
-// @media (max-width:767px) {
-
-// }
-
-// @media (max-width:575px) {
-
-// }
+@media (max-width:575px) {
+    .advantages {
+        background: url('../img/bg/advantages-small.jpg') center (center/cover) no-repeat;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+}

@@ -4528,7 +4528,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var wow_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(wow_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_highlightMenuObjects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/highlightMenuObjects */ "./src/js/modules/highlightMenuObjects.js");
 /* harmony import */ var _modules_glideSliders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/glideSliders */ "./src/js/modules/glideSliders.js");
-/* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
+/* harmony import */ var _modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/changingNumbers */ "./src/js/modules/changingNumbers.js");
+/* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
+
 
 
 
@@ -4557,8 +4559,43 @@ window.addEventListener('DOMContentLoaded', () => {
     Object(_modules_glideSliders__WEBPACK_IMPORTED_MODULE_2__["default"])();
   } catch (e) {}
   Object(_modules_highlightMenuObjects__WEBPACK_IMPORTED_MODULE_1__["default"])('.menu__item__link', 'menu__item__link_active');
-  Object(_modules_modals__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-0', 80);
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-1', 5);
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-2', 150);
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-3', 50);
+  Object(_modules_modals__WEBPACK_IMPORTED_MODULE_4__["default"])();
 });
+
+/***/ }),
+
+/***/ "./src/js/modules/changingNumbers.js":
+/*!*******************************************!*\
+  !*** ./src/js/modules/changingNumbers.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function changingNumbers(selector, speed) {
+  const number = document.querySelector(selector),
+    numberTop = number.getBoundingClientRect().top;
+  let start = +number.innerHTML,
+    end = +number.dataset.max;
+  window.addEventListener('scroll', function onScroll() {
+    if (window.pageYOffset > numberTop - window.innerHeight / 1.2) {
+      this.removeEventListener('scroll', onScroll);
+      const interval = setInterval(() => {
+        number.innerHTML = ++start;
+        if (start == end) {
+          clearInterval(interval);
+          number.dataset.plus ? number.innerHTML += number.dataset.plus : null;
+        }
+      }, speed);
+    }
+  });
+}
+/* harmony default export */ __webpack_exports__["default"] = (changingNumbers);
 
 /***/ }),
 

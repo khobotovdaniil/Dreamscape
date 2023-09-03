@@ -2,6 +2,7 @@ import WOW from 'wow.js';
 
 import highlightMenuObjects from './modules/highlightMenuObjects';
 import glideSliders from './modules/glideSliders';
+import changingNumbers from './modules/changingNumbers';
 import modals from './modules/modals';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +33,11 @@ window.addEventListener('DOMContentLoaded', () => {
 	} catch(e) {}
 
 	highlightMenuObjects('.menu__item__link', 'menu__item__link_active');
+
+	changingNumbers('.number-0', 80);
+	changingNumbers('.number-1', 5);
+	changingNumbers('.number-2', 150);
+	changingNumbers('.number-3', 50);
 
 	modals();
 });

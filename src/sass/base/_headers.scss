@@ -18,6 +18,7 @@ h2 {
     &.text-line {
         position: relative;
         margin-left: 64px;
+        color: var(--main-2);
         &:before {
             content: '';
             display: block;
@@ -26,12 +27,13 @@ h2 {
             position: absolute;
             left: -64px;
             top: 19px;
-            background-color: var(--text);
+            background-color: var(--main-2);
             box-shadow: var(--shadow-text-dark);
             border-radius: 10px;
         }
     }
     &.text-white {
+        color: var(--text-white);
         &.text-line {
             &:before {
                 background-color: var(--text-white);

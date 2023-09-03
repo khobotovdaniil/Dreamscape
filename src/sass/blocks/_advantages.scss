@@ -1,8 +1,9 @@
 .advantages {
     min-height: 200px;
     padding: 60px 0;
-    background: url('../img/bg/advantages.jpg') center (center/cover) no-repeat;
     overflow: hidden; 
+    position: relative;
+    background: url('../img/bg/advantages.jpg') center (center/cover) no-repeat;
     &__wrapper {
         margin-top: 30px;
         border-radius: 10px;

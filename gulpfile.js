@@ -12,8 +12,8 @@ const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 
 const dist = "./dist/";
-const prod = "./prod/";
-// const prod = "/openserver/domains/wordpress/wp-content/themes/Paradise";
+// const prod = "./prod/";
+const prod = "/openserver/domains/Paradise/wp-content/themes/estatesparadise";
 // const dist = "/openserver/domains/dist";
 
 gulp.task('styles', function() {
@@ -99,8 +99,8 @@ gulp.task("prod-css", () => {
     .pipe(rename({suffix: '', prefix: ''}))
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(replace('../', 'assets/styles/'))
-    .pipe(gulp.dest(prod +"/"))
+    // .pipe(replace('../', 'assets/'))
+    .pipe(gulp.dest(prod +"/assets/styles/"))
     .pipe(browserSync.stream());
 });
 

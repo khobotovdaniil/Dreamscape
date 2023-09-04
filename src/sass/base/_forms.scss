@@ -35,6 +35,9 @@
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
+        p {
+            position: relative;
+        }
     }
     &__policy {
         margin: auto auto;

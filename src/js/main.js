@@ -4,6 +4,7 @@ import highlightMenuObjects from './modules/highlightMenuObjects';
 import glideSliders from './modules/glideSliders';
 import changingNumbers from './modules/changingNumbers';
 import modals from './modules/modals';
+import checkboxValidation from './modules/checkboxValidation';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -41,4 +42,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	changingNumbers('.number-4');
 
 	modals();
+	checkboxValidation();
+
 });

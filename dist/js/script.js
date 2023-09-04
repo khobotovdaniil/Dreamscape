@@ -4530,6 +4530,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_glideSliders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/glideSliders */ "./src/js/modules/glideSliders.js");
 /* harmony import */ var _modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/changingNumbers */ "./src/js/modules/changingNumbers.js");
 /* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
+/* harmony import */ var _modules_checkboxValidation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/checkboxValidation */ "./src/js/modules/checkboxValidation.js");
+
 
 
 
@@ -4564,6 +4566,7 @@ window.addEventListener('DOMContentLoaded', () => {
   Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-3');
   Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-4');
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  Object(_modules_checkboxValidation__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
 
 /***/ }),
@@ -4596,6 +4599,39 @@ function changingNumbers(selector) {
   });
 }
 /* harmony default export */ __webpack_exports__["default"] = (changingNumbers);
+
+/***/ }),
+
+/***/ "./src/js/modules/checkboxValidation.js":
+/*!**********************************************!*\
+  !*** ./src/js/modules/checkboxValidation.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function checkboxValidation() {
+  const forms = document.querySelectorAll('.form');
+  forms.forEach(element => {
+    const checkbox = element.querySelector('.policy'),
+      button = element.querySelector('.button');
+    const changeStatus = () => {
+      if (checkbox.checked) {
+        checkbox.classList.remove('notValid');
+        button.disabled = false;
+      } else {
+        checkbox.classList.add('notValid');
+        button.disabled = true;
+      }
+    };
+    changeStatus();
+    checkbox.addEventListener('change', () => {
+      changeStatus();
+    });
+  });
+}
+/* harmony default export */ __webpack_exports__["default"] = (checkboxValidation);
 
 /***/ }),
 

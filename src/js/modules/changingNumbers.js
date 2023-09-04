@@ -1,4 +1,4 @@
-function changingNumbers (selector, speed) {
+function changingNumbers (selector) {
 
     const number = document.querySelector(selector),
           numberTop = number.getBoundingClientRect().top;
@@ -13,9 +13,9 @@ function changingNumbers (selector, speed) {
                 number.innerHTML = ++start;
                 if (start == end) {
                     clearInterval(interval);
-                    number.dataset.plus ? number.innerHTML += number.dataset.plus : null;
+                    number.dataset.plus ? number.innerHTML += '+' : null;
                 }
-            }, speed);
+            }, number.dataset.speed);
         }
     });
 

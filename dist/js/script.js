@@ -4559,10 +4559,10 @@ window.addEventListener('DOMContentLoaded', () => {
     Object(_modules_glideSliders__WEBPACK_IMPORTED_MODULE_2__["default"])();
   } catch (e) {}
   Object(_modules_highlightMenuObjects__WEBPACK_IMPORTED_MODULE_1__["default"])('.menu__item__link', 'menu__item__link_active');
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-0', 80);
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-1', 5);
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-2', 150);
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-3', 50);
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-1');
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-2');
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-3');
+  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-4');
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_4__["default"])();
 });
 
@@ -4577,7 +4577,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function changingNumbers(selector, speed) {
+function changingNumbers(selector) {
   const number = document.querySelector(selector),
     numberTop = number.getBoundingClientRect().top;
   let start = +number.innerHTML,
@@ -4589,9 +4589,9 @@ function changingNumbers(selector, speed) {
         number.innerHTML = ++start;
         if (start == end) {
           clearInterval(interval);
-          number.dataset.plus ? number.innerHTML += number.dataset.plus : null;
+          number.dataset.plus ? number.innerHTML += '+' : null;
         }
-      }, speed);
+      }, number.dataset.speed);
     }
   });
 }

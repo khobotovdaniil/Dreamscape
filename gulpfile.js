@@ -13,7 +13,7 @@ const htmlmin = require('gulp-htmlmin');
 
 const dist = "./dist/";
 const prod = "./prod/";
-// const prod = "/openserver/domains/wordpress/wp-content/themes/ISU";
+// const prod = "/openserver/domains/wordpress/wp-content/themes/Paradise";
 // const dist = "/openserver/domains/dist";
 
 gulp.task('styles', function() {
@@ -99,7 +99,7 @@ gulp.task("prod-css", () => {
     .pipe(rename({suffix: '', prefix: ''}))
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(replace('../', 'assets/'))
+    .pipe(replace('../', 'assets/styles/'))
     .pipe(gulp.dest(prod +"/"))
     .pipe(browserSync.stream());
 });

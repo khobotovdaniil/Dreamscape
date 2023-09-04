@@ -33,11 +33,12 @@ window.addEventListener('DOMContentLoaded', () => {
 	} catch(e) {}
 
 	highlightMenuObjects('.menu__item__link', 'menu__item__link_active');
-
-	changingNumbers('.number-0', 80);
-	changingNumbers('.number-1', 5);
-	changingNumbers('.number-2', 150);
-	changingNumbers('.number-3', 50);
+	
+	
+	changingNumbers('.number-1');
+	changingNumbers('.number-2');
+	changingNumbers('.number-3');
+	changingNumbers('.number-4');
 
 	modals();
 });

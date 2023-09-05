@@ -20,7 +20,7 @@
     .header {
         height: 80px;
         &__logo {
-            height: 60px;
+            height: 64px;
         }
         &__wrapper {
             display: flex;
@@ -65,7 +65,7 @@
 @media (max-width:767px) {
     .header {
         &__logo {
-            height: 50px;
+            height: 60px;
             &:hover {
                 filter: drop-shadow(var(--shadow-icons-white));   
             }
@@ -128,7 +128,7 @@
             column-gap: 10px;
         }
         &__logo {
-            height: 60px;
+            height: 66px;
         }
         &__icon {
             height: 20px;

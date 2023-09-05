@@ -39,6 +39,7 @@
         transition: 0.6s all;
         text-transform: none;
         box-shadow: var(--shadow-button-dark);
+        padding: 0 5px;
         &:hover {
             color: var(--main-1);
             box-shadow: var(--shadow-button-light);

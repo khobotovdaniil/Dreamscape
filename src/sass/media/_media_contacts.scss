@@ -3,13 +3,19 @@
         &__content {
             width: 100%;
         }
+        &__img {
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            opacity: 0.3;
+            transform: translate(-50%, -50%)
+        }
     }
 }
 
 @media (max-width:767px) {
     .contacts {
         padding: 30px 0;
-        background: url('../img/bg/contacts-tab.jpg') center (center/cover) no-repeat;
         &__item {
             &__icon {
                 filter: drop-shadow(var(--shadow-icons-dark)); 
@@ -27,11 +33,5 @@
                 }
             }
         }
-    }
-}
-
-@media (max-width:575px) {
-    .contacts {
-        background: url('../img/bg/contacts-mob.jpg') center (center/cover) no-repeat;
     }
 }

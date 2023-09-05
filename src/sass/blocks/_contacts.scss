@@ -1,10 +1,14 @@
 .contacts {
     min-height: 500px;
     padding: 60px 0;
-    background: url('../img/bg/contacts.jpg') center (center/cover) no-repeat;
+    background-image: var(--gradient-bg);
     overflow: hidden; 
+    .container {
+        position: relative;
+    }
     &__content {
         width: 50%;
+        z-index: 1;
     }
     &__descr {
         margin-top: 30px;
@@ -50,6 +54,19 @@
             -webkit-text-fill-color: transparent; 
             -moz-background-clip: text;
             -moz-text-fill-color: transparent;
+        }
+    }
+    &__img {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        opacity: 0.8;
+        filter: drop-shadow(var(--shadow-icons-dark));
+        img {
+            width: 100%;
+            object-fit: contain;
         }
     }
 }

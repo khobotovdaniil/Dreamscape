@@ -94,11 +94,12 @@ input[type='checkbox'] {
             margin-top: 0;
             .button {
                 display: block;
-                margin: 20px 0 0 auto;
+                margin: 10px 0 0 auto;
             }
         }
         &__policy {
             margin-left: 20px;
+            margin-top: 5px;
             display: flex;
         }
     }

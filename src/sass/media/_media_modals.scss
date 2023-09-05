@@ -1,6 +1,8 @@
 @media (max-width:767px) {
     .modal {
         &__logo {
+            margin-top: 0;
+            height: 60px;
             &:hover {
                 filter: drop-shadow(var(--shadow-icons-dark)); 
             }
@@ -43,9 +45,16 @@
 
 @media (max-width:575px) {
     .modal {
+        padding: 15px;
         width: 310px;
+        &__header {
+            height: 30px;
+        }
+        &__content {
+            margin-top: 10px;
+        }
         &__logo {
-            height: 35px;
+            height: 45px;
         }
         &__close {
             height: 30px;

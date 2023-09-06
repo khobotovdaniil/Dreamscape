@@ -16,8 +16,9 @@
             align-items: center;
             &__img {
                 margin-top: 5px;
-                width: 40px;
-                height: 40px;
+                width: 46px;
+                height: 46px;
+                filter: drop-shadow(var(--shadow-icons-light)); 
                 img {
                     height: 100%;
                     object-fit: contain;

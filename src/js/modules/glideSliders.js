@@ -8,6 +8,7 @@ function glideSliders () {
         gap: 10,
         breakpoints: {
             1199: {
+                perView: 5,
                 gap: 5,
             },
             991: {

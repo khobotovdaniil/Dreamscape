@@ -2,8 +2,10 @@
     min-height: 300px;
     padding: 60px 0 80px 0;
     background-image: var(--gradient-dark);
+    // background: linear-gradient(270deg, rgba(73, 96, 114, 0.70) 0.39%, rgba(86, 125, 156, 0.70) 113.62%);
+    // backdrop-filter: blur(5px);
     &__descr {
-        margin-top: 30px;
+        margin-top: 10px;
         text-align: center;
     }
     &__slide {

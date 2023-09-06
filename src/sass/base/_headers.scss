@@ -7,10 +7,12 @@ h1,h2,h3,h4,h5,h6,.text-header {
 }
 
 h1 {
-    font-size: 46px;
-    text-transform: uppercase;
+    font-size: 38px;
     &.text-white {
         text-shadow: var(--shadow-text-light);
+    }
+    .front-page {
+        font-size: 46px;
     }
 }
 
@@ -70,6 +72,12 @@ h6 {
 }
 
 @media (max-width:767px) {
+    h1 {
+        font-size: 30px;
+        .front-page {
+            font-size: 40px;
+        }
+    }
     h2 {
         font-size: 26px;
         &.text-line {
@@ -99,7 +107,10 @@ h6 {
 
 @media (max-width:575px) {
     h1 {
-        font-size: 34px;
+        font-size: 26px;
+        .front-page {
+            font-size: 34px;
+        }
     }
 
     h2 {

@@ -4,7 +4,8 @@
     padding: 0;
     color: var(--text);
     font-size: 16px;
-    letter-spacing: 0.09em;
+    font-style: normal;
+    letter-spacing: 0.06em;
     .text-white {
         color: var(--text-white);
     }
@@ -25,6 +26,9 @@
         &.text-white {
             text-shadow: var(--shadow-text-light);
         }
+    }
+    .text-caps {
+        text-transform: uppercase;
     }
     
     a {

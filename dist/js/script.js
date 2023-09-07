@@ -4541,7 +4541,7 @@ window.addEventListener('DOMContentLoaded', () => {
   //Menu: static/dynamic 
   const headerBlock = document.getElementById('header');
   window.onscroll = function () {
-    if (window.pageYOffset > 90) {
+    if (window.pageYOffset > 50) {
       headerBlock.style.backgroundColor = 'var(--header-bg)';
     } else {
       headerBlock.style.backgroundColor = 'rgba(0,0,0,0)';
@@ -4561,10 +4561,12 @@ window.addEventListener('DOMContentLoaded', () => {
     Object(_modules_glideSliders__WEBPACK_IMPORTED_MODULE_2__["default"])();
   } catch (e) {}
   Object(_modules_highlightMenuObjects__WEBPACK_IMPORTED_MODULE_1__["default"])('.menu__item__link', 'menu__item__link_active');
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-1');
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-2');
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-3');
-  Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-4');
+  try {
+    Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-1');
+    Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-2');
+    Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-3');
+    Object(_modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__["default"])('.number-4');
+  } catch (e) {}
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_4__["default"])();
   Object(_modules_checkboxValidation__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
@@ -4654,6 +4656,7 @@ function glideSliders() {
     gap: 10,
     breakpoints: {
       1199: {
+        perView: 5,
         gap: 5
       },
       991: {
@@ -4676,47 +4679,7 @@ function glideSliders() {
     animationDuration: 1000
   });
   partnersSlider.mount();
-
-  // const pricesSlider = new Glide('.prices', {
-  //     type: 'carousel',		
-  //     startAt: 0,
-  //     perView: 3,
-  //     gap: -30,
-  //     breakpoints: {
-  //         767: {
-  //             perView: 2,
-  //             gap: -70,
-  //         },
-  //         575: {
-  //             perView: 1,
-  //             gap: -250,
-  //         },
-  //         512: {
-  //             perView: 1,
-  //             gap: -180,
-  //         },
-  //         440: {
-  //             perView: 1,
-  //             gap: -100,
-  //         },
-  //         360: {
-  //             perView: 1,
-  //             gap: -70,
-  //         },
-  //         320: {
-  //             perView: 1,
-  //             gap: -50,
-  //         }
-  //     },
-  //     autoplay: 5000,
-  //     hoverpause: true,
-  //     focusAt: 'center',
-  //     animationTimingFunc: 'ease-in-out',
-  //     animationDuration: 500,
-  // });
-  // pricesSlider.mount();
 }
-
 /* harmony default export */ __webpack_exports__["default"] = (glideSliders);
 
 /***/ }),

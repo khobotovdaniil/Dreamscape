@@ -1,9 +1,9 @@
 @media (max-width:767px) {
     .services {
         padding: 30px 0;
-        background: url('../img/bg/services-tab.jpg') center (center/cover) no-repeat;
+        background-image: var(--services-bg-tab);
         &__content {
-            width: 70%;
+            width: 60%;
         }
         &__list {
             margin-top: 10px;
@@ -19,9 +19,13 @@
 
 @media (max-width:575px) {
     .services {
-        background: url('../img/bg/services-mob.jpg') center (center/cover) no-repeat;
+        background-image: var(--services-bg-mob);
         &__content {
-            width: 100%;
+            width: 80%;
+            margin: 0 auto 0 0;
+        }
+        &__bg {
+            left: 40%;
         }
         &__title {
             display: flex;

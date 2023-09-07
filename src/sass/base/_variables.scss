@@ -10,11 +10,18 @@
     --main-3: #C5D8E6;
     --main-4: #F0DAB9;
     --main-5: #E8C38B;
+
     --page-bg: #e8e2d8;
     --header-bg:rgba(73, 96, 114, .9);
+
+    --services-bg: linear-gradient(270deg, #efa477 -90%, #f0d7b3 47%, rgba(197, 216, 230, 0.00) 70%);
+    --services-bg-tab: linear-gradient(270deg, #efa477 -90%,#f0d7b3 57%, rgba(197, 216, 230, 0.00) 85%);
+    --services-bg-mob: linear-gradient(90deg, #efa477 -90%, #f0d7b3 40%, rgba(197, 216, 230, 0.00) 100%);
+
     --gradient-dark: linear-gradient(270deg, #496072 8.89%, #567D9C 100%);
-    --gradient-bg: linear-gradient(135deg, #F0DAB9 0%, #C5D8E6 100%);
+    --gradient-bg: linear-gradient(135deg, #efa477 -80%, #f0d7b3 40%, #C5D8E6 130%);
     --gradient-light: linear-gradient(122deg, #F0DAB9 0%, rgba(240, 218, 185, 0.00) 100%);
+
     --shadow-text-light: 0px 6px 6px rgba(232, 195, 139, 0.70);
     --shadow-text-dark: 0px 6px 6px rgba(86, 125, 156, 0.70);
     --shadow-button-light: 6px 6px 10px rgba(232, 195, 139, 0.60);

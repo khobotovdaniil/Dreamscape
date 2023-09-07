@@ -1,7 +1,7 @@
 {
-  "name": "isu",
-  "version": "0.1.0",
-  "description": "Site for Figure Skating Academy",
+  "name": "paradise",
+  "version": "1.0.0",
+  "description": "Paradise Estate - Real Estate Company in Dubai",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

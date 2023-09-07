@@ -116,6 +116,8 @@
             text-transform: capitalize;
             font-size: 16px;
             &__link {
+                text-shadow: var(--shadow-text-dark);
+                transition: 0.4s all;
                 &:hover {
                     text-shadow: var(--shadow-text-light);
                 }

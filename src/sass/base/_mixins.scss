@@ -1,0 +1,40 @@
+@mixin arrow_left {
+    &:before, &:after {
+        content: '';
+        width: 14px;
+        height: 2px;
+        left: 0px;
+        position: absolute;
+        background-color: var(--main-4);
+        border-radius: 10px;
+    }
+    &:before {
+        top: 8px;
+        transform: rotate(-55deg);
+    }
+    &:after {
+        top: 19px;
+        transform: rotate(55deg);
+    }
+}
+
+@mixin arrow_right {
+    &:before, &:after {
+        content: '';
+        width: 14px;
+        height: 2px;
+        left: 1px;
+        position: absolute;
+        background-color: var(--main-4);
+        border-radius: 10px;
+        transform: rotate(55deg);
+    }
+    &:before {
+        top: 8px;
+        transform: rotate(55deg);
+    }
+    &:after {
+        top: 19px;
+        transform: rotate(-55deg);
+    }
+}

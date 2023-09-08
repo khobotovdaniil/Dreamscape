@@ -10,7 +10,7 @@
 @media (max-width:991px) {
     .promo {
         min-height: 550px;
-        padding-top: 150px;
+        padding-top: 120px;
         &__content {
             margin-left: 60px;
         }
@@ -20,7 +20,7 @@
 @media (max-width:767px) {
     .promo {
         min-height: 500px;
-        padding-top: 120px;
+        padding-top: 90px;
         &__content {
             margin-left: 0;
         }
@@ -35,7 +35,7 @@
         }
         &__button {
             display: block;
-            margin: 30px 0 0 auto;
+            margin: 0 0 0 auto;
         }
     }
 }

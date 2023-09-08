@@ -4531,6 +4531,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_changingNumbers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/changingNumbers */ "./src/js/modules/changingNumbers.js");
 /* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
 /* harmony import */ var _modules_checkboxValidation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/checkboxValidation */ "./src/js/modules/checkboxValidation.js");
+/* harmony import */ var _modules_parallaxBlock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/parallaxBlock */ "./src/js/modules/parallaxBlock.js");
+
 
 
 
@@ -4569,6 +4571,9 @@ window.addEventListener('DOMContentLoaded', () => {
   } catch (e) {}
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_4__["default"])();
   Object(_modules_checkboxValidation__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  try {
+    Object(_modules_parallaxBlock__WEBPACK_IMPORTED_MODULE_6__["default"])('.promo__content');
+  } catch (e) {}
 });
 
 /***/ }),
@@ -4771,6 +4776,32 @@ function modals() {
   bindModal('.button_contact', '.modal_contact', '.modal__close');
 }
 /* harmony default export */ __webpack_exports__["default"] = (modals);
+
+/***/ }),
+
+/***/ "./src/js/modules/parallaxBlock.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/parallaxBlock.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function parallaxBlock(selector) {
+  const block = document.querySelector(selector),
+    margin = block.querySelectorAll('.mt-dynamic');
+  window.addEventListener('scroll', () => {
+    let distance = window.scrollY;
+    block.style.transform = `translateY(${distance * 0.4}px)`;
+    margin.forEach(item => {
+      item.style.marginTop = `${30 - distance * 0.1}px`;
+      item.style.opacity = `${1 - distance * 0.001}`;
+    });
+    console.log(distance);
+  });
+}
+/* harmony default export */ __webpack_exports__["default"] = (parallaxBlock);
 
 /***/ })
 

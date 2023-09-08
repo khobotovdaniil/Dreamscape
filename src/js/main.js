@@ -5,6 +5,7 @@ import glideSliders from './modules/glideSliders';
 import changingNumbers from './modules/changingNumbers';
 import modals from './modules/modals';
 import checkboxValidation from './modules/checkboxValidation';
+import parallaxBlock from './modules/parallaxBlock';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -44,5 +45,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	modals();
 	checkboxValidation();
-
+	
+	try {
+		parallaxBlock('.promo__content');
+	} catch(e) {}
 });

@@ -45,6 +45,11 @@
             box-shadow: var(--shadow-button-light);
         }
     }
+    &_link {
+        text-align: center;
+        padding: 20px 40px;
+        font-style: normal;
+    }
 }
 
 @media (max-width:767px) {

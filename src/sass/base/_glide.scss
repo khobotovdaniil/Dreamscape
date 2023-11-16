@@ -58,6 +58,10 @@
             box-shadow: var(--shadow-icons-light);
         }
     }
+    picture {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width:1199px) {
